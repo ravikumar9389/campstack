@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+      <header class="header">
+    <nav class="custom-navbar">
+        <div class="custom-container">
+            <a class="custom-brand" href="#">
+                <img src="assets/images/owp-camstack-b-logo.png" alt="Logo">
+            </a>
+            <button class="menu-toggle" type="button" id="menu-toggle">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+            <div class="nav-collapse" id="navbarNav">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link mt-3" href="/index.html" style="color: #000;;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-3" href="/about.html" style="color: #000;;">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle-btn mt-3" id="dropdownMenuButton1">
+                            Shop
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="/Shopcamera.html">CAMERA</a></li>
+                            <li><a class="dropdown-item" href="/Equipment.html">EQUIPMENT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-3" href="/Blog.html" style="color: #000;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-3" href="/contact.html" style="color: #000;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-3" href="/myAccount.html" style="color: #000;">My Account</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cart">
+                <a href="#" id="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="cart-items" id="cart-items">
+                    <ul id="cart-list">
+                        <!-- Items will be added here -->
+                    </ul>
+                </div>
+                <div class="cart-offcanvas" id="offcanvasRight">
+                    <div class="offcanvas-header">
+                        <h5>Shopping Cart</h5>
+                        <button type="button" class="btn-close" id="close-cart">×</button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div id="cart-content"></div>
+                        <div class="prices">
+                            <div class="subtotal mb-2">
+                                <p class="mb-0">Subtotal:</p>
+                                <div class="price"><span class="pe-1">$0.00</span></div>
+                            </div>
+                            <div class="canva-button">
+                                <a class="viewcard" href="#">View Cart</a>
+                                <a class="checkout" href="#">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+    <section class="hero-section1">
+        <div class="hero-opacity1">
+            <div class="container">
+                <div class="hero-item">
+                    <div class="hero-content">
+                        <div class="hero-main-section">
+                            <div class="unlesh">
+                                <h1 class="text-center">CAMERA</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shorting-section my-5">
+        <div class="container">
+            <div class="shorting-item">
+                <div class="shorting-content">
+                    <div class="shorting-main-content">
+                        <div class="dashbord">
+                            <div class="dashbord-icon d-flex align-items-center justify-content-start gap-4 ">
+                                <div class="d-flex align-item-center justify-content-start gap-2">
+                                    <div class="checklist-icon1">
+                                        <a class="checklist2" href="/Shopcamera.html"
+                                            onclick="applyborder(event, this)">
+                                            <img src="/assets/images/dashboard.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="checklist-icon">
+                                        <a class="checklist4" href="#" onclick="applyborder(event, this)">
+                                            <i class="fa-solid fa-list"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <select class="form-select rounded-0 pt-1 pb-1 " aria-label="Default select example">
+                                    <option selected style="color: #a3a3a3;">Default sorting</option>
+                                    <option value="1">Sort by popularity</option>
+                                    <option value="2">Sort by average rating</option>
+                                    <option value="3">Sort by latest</option>
+                                    <option value="3">Sort by price: low to high</option>
+                                    <option value="3">Sort by price: high to low</option>
+                                </select>
+                            </div>
+                            <div class="dashbord-date">
+                                <p class="pt-3">View: 12 <span>/ 24 / All </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-content-section my-5">
+        <div class="container">
+            <div class="product-content-item">
+                <div class="product-content-content">
+                    <div class="product-main-history">
+                        <div class="shop-card">
+                            <div class="shop-history">
+                                <div>
+                                    <div class="card">
+                                        <img src="/assets/images/oceanwp-camera-product-img-001-1-300x300.jpg"
+                                            alt="Camera Front" />
+                                        <img class="hover-image"
+                                            src="/assets/images/oceanwp-camera-product-img-001-2-300x300.jpg"
+                                            alt="Camera Back" />
+                                        <button class="view-quick-btn"><i class="fa-solid fa-eye pe-2"></i> View
+                                            Quick</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#">Camera</a>
+                                    <div class="effeciture">
+                                        <h2>Maecenas varius maximus</h2>
+                                    </div>
+                                    <div class="price">
+                                        <h2 class="fs-5">$459.00</h2>
+                                    </div>
+                                    <p>Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam
+                                        mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in
+                                        purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer
+                                        risus et tortor. Lorem ipsum dolor sit amet, </p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card my-4">
+                            <div class="shop-history">
+                                <div>
+                                    <div class="card">
+                                        <img src="/assets/images/oceanwp-camera-product-img-001-1-300x300.jpg"
+                                            alt="Camera Front" />
+                                        <img class="hover-image"
+                                            src="/assets/images/oceanwp-camera-product-img-001-2-300x300.jpg"
+                                            alt="Camera Back" />
+                                        <button class="view-quick-btn"><i class="fa-solid fa-eye pe-2"></i> View
+                                            Quick</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#">Camera</a>
+                                    <div class="effeciture">
+                                        <h2>Maecenas varius maximus</h2>
+                                    </div>
+                                    <div class="price">
+                                        <h2 class="fs-5">$459.00</h2>
+                                    </div>
+                                    <p>Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam
+                                        mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in
+                                        purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer
+                                        risus et tortor. Lorem ipsum dolor sit amet, </p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card mt-4">
+                            <div class="shop-history">
+                                <div>
+                                    <div class="card">
+                                        <img src="/assets/images/oceanwp-camera-product-img-001-1-300x300.jpg"
+                                            alt="Camera Front" />
+                                        <img class="hover-image"
+                                            src="/assets/images/oceanwp-camera-product-img-001-2-300x300.jpg"
+                                            alt="Camera Back" />
+                                        <button class="view-quick-btn"><i class="fa-solid fa-eye pe-2"></i> View
+                                            Quick</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#">Camera</a>
+                                    <div class="effeciture">
+                                        <h2>Maecenas varius maximus</h2>
+                                    </div>
+                                    <div class="price">
+                                        <h2 class="fs-5">$459.00</h2>
+                                    </div>
+                                    <p>Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam
+                                        mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in
+                                        purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer
+                                        risus et tortor. Lorem ipsum dolor sit amet, </p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-card mt-4">
+                            <div class="shop-history">
+                                <div>
+                                    <div class="card">
+                                        <img src="/assets/images/oceanwp-camera-product-img-001-1-300x300.jpg"
+                                            alt="Camera Front" />
+                                        <img class="hover-image"
+                                            src="/assets/images/oceanwp-camera-product-img-001-2-300x300.jpg"
+                                            alt="Camera Back" />
+                                        <button class="view-quick-btn"><i class="fa-solid fa-eye pe-2"></i> View
+                                            Quick</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#">Camera</a>
+                                    <div class="effeciture">
+                                        <h2>Maecenas varius maximus</h2>
+                                    </div>
+                                    <div class="price">
+                                        <h2 class="fs-5">$459.00</h2>
+                                    </div>
+                                    <p>Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam
+                                        mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in
+                                        purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer
+                                        risus et tortor. Lorem ipsum dolor sit amet, </p>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="world-form-section">
+        <div class="hero-opacity1">
+            <div class="container">
+                <div class="world-form-item">
+                    <div class="world-form-content">
+                        <div class="main-world-form">
+                            <div class="make text-center">
+                                <h3>Newsletter</h3>
+                            </div>
+                            <div class="unlesh2 text-center">
+                                <h1>Sign up for our newsletter</h1>
+                            </div>
+                            <div class="text-center mt-4">
+                                <input type="text" placeholder="Enter your email address">
+                                <span class="go">Go</span><br />
+                                <div class="check1">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label class="checkbox me-5 pe-5">Accept GDPR Terms</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5 pt-3">
+        <div class="container">
+            <div class="footer-columns1">
+            <div class="footer-columns">
+                <div class="footer-logo">
+                    <img src="/assets/images/owp-camstack-b-logo.png" alt="">
+                </div>
+                <h4>About Us</h4>
+                <p>Go above built-in OceanWP<br> WooCommerce customization and<br> create a fully <a href="">custom eCommerce<br> website with
+                    Ocean eComm Treasure<br> Box.</a></p>
+                    <div class="social-icon">
+                        <div class="social-icon1"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="social-icon1"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="social-icon1"><i class="fa-brands fa-youtube"></i></div>
+                    </div>
+                </div>
+                <div class="footer-columns">
+                <h4>Store</h4>
+                <ul>
+                    <li><a href="">Cameras</a></li>
+                    <li><a href="">Film Camera</a></li>
+                    <li><a href="">Drones Camera</a></li>
+                    <li><a href="">DSLR Camera</a></li>
+                </ul>
+            </div>
+                <div class="footer-columns">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">The Company</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">FAQ’S</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+                <div class="footer-columns">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><a href="">
+                        <span class="location"><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Seilergasse, Wienna, Austria</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="location"><i class="fa-solid fa-phone-volume"></i></span>
+                        <span>+91 9389859633</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="location"><i class="fa-solid fa-envelope"></i></span>
+                        <span>rk2082660@gmail.com</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="location"><i class="fa-solid fa-link"></i></span>
+                        <span>Yourwebsitelink</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="bottom-box mt-5">
+            <p class="m-0">Copyright 2025 - Launch your next photography store website in minutes with <span>OceanWP templates</span></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
