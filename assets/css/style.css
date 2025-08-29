@@ -236,7 +236,7 @@ body {
 }
 
 .hero-section {
-  background-image: url(/assets/images/oceanwp-img-001.jpg);
+  background-image: url(../images/oceanwp-img-001.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-right-radius: 100px;
@@ -353,7 +353,7 @@ body {
 }
 
 .world-form-section {
-  background-image: url(/assets/images/oceanwp-img-002.jpg);
+  background-image: url(../images/oceanwp-img-002.jpg);
   background-repeat: no-repeat;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -899,7 +899,7 @@ body {
 
 /* About page start  */
 .hero-section1{
-  background-image: url(/assets/images/about.jpg);
+  background-image: url(../images/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
@@ -1061,7 +1061,7 @@ color: #999;
 
 /* contact page start */
 .contact-section1{
-  background-image: url(/assets/images/pho5.jpg);
+  background-image: url(../images/pho5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
